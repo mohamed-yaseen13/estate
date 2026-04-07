@@ -1,3 +1,5 @@
+import 'package:estate/core/helpers/extensions.dart';
+import 'package:estate/core/routing/app_routes.dart';
 import 'package:estate/core/style/app_colors.dart';
 import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +38,7 @@ class _RememberMeAndForgotPasswordRowState
         Spacer(),
         InkWell(
           onTap: () {
-            // context.pushNamed(AppRoutes.resetPassword);
+            context.pushNamed(AppRoutes.resetPasswordScreen);
           },
           child: Text(
             'هل نسيت كلمة السر ؟',
