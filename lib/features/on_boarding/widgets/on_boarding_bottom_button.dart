@@ -1,6 +1,7 @@
 import 'package:estate/core/constants/app_constants.dart';
 import 'package:estate/core/helpers/extensions.dart';
 import 'package:estate/core/routing/app_routes.dart';
+import 'package:estate/core/style/app_colors.dart';
 import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -32,7 +33,7 @@ class OnBoardingBottomButton extends StatelessWidget {
           }
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF234F68),
+          backgroundColor: AppColors.primaryDarkBlue,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8.r),
           ),

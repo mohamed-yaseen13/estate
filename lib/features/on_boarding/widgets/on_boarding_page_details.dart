@@ -1,5 +1,6 @@
 import 'package:estate/core/constants/app_constants.dart';
 import 'package:estate/core/helpers/spacing.dart';
+import 'package:estate/core/style/app_colors.dart';
 import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -35,7 +36,7 @@ class OnBoardingPageDetails extends StatelessWidget {
                     borderRadius: 90.r,
                     imagePath: model.imageBottom,
                     colorFilter: ColorFilter.mode(
-                      Color(0xFF234F68).withAlpha(100),
+                      AppColors.primaryDarkBlue.withAlpha(100),
                       BlendMode.srcATop,
                     ),
                   ),

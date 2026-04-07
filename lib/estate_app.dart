@@ -1,5 +1,6 @@
 import 'package:estate/core/routing/app_router.dart';
 import 'package:estate/core/routing/app_routes.dart';
+import 'package:estate/core/style/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,8 +16,8 @@ class EstateApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           theme: ThemeData(
-            scaffoldBackgroundColor: Color(0xFFFCFCFD),
-            appBarTheme: AppBarTheme(backgroundColor: Color(0xFFFCFCFD)),
+            scaffoldBackgroundColor: AppColors.mainColor,
+            appBarTheme: AppBarTheme(backgroundColor: AppColors.mainColor),
           ),
           debugShowCheckedModeBanner: false,
           initialRoute: AppRoutes.onBoardingScreen,
