@@ -1,5 +1,6 @@
 import 'package:estate/core/routing/app_routes.dart';
 import 'package:estate/features/auth/login/ui/login_screen.dart';
+import 'package:estate/features/auth/signup/ui/signup_screen.dart';
 import 'package:estate/features/home/ui/home_screen.dart';
 import 'package:estate/features/on_boarding/ui/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,12 @@ class AppRouter {
       case AppRoutes.loginScreen:
         return MaterialPageRoute(
           builder: (_) => LoginScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.signupScreen:
+        return MaterialPageRoute(
+          builder: (_) => SignupScreen(),
           settings: settings,
         );
 

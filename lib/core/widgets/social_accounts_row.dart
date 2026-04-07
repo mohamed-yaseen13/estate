@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-class LoginSocialRow extends StatelessWidget {
-  const LoginSocialRow({super.key});
+class SocialAccountsRow extends StatelessWidget {
+  const SocialAccountsRow({super.key});
 
   @override
   Widget build(BuildContext context) {

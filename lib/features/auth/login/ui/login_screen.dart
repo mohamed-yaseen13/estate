@@ -1,8 +1,8 @@
 import 'package:estate/core/helpers/spacing.dart';
-import 'package:estate/features/auth/login/widgets/divider_row.dart';
+import 'package:estate/core/widgets/divider_row.dart';
 import 'package:estate/features/auth/login/widgets/dont_have_an_account_row.dart';
 import 'package:estate/features/auth/login/widgets/login_form.dart';
-import 'package:estate/features/auth/login/widgets/login_social_row.dart';
+import 'package:estate/core/widgets/social_accounts_row.dart';
 import 'package:estate/features/auth/login/widgets/welcome_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,12 +23,12 @@ class LoginScreen extends StatelessWidget {
               SvgPicture.asset('assets/images/auth_top_image.svg'),
               verticalSpace(24),
               WelcomeText(),
-              verticalSpace(8),
+              verticalSpace(24),
               LoginForm(),
-              verticalSpace(18),
+              verticalSpace(24),
               DividerRow(),
               verticalSpace(12),
-              LoginSocialRow(),
+              SocialAccountsRow(),
               verticalSpace(12),
               DontHaveAnAccountRow(),
             ],

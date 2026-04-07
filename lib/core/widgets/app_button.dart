@@ -3,10 +3,11 @@ import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginButton extends StatelessWidget {
+class AppButton extends StatelessWidget {
   final VoidCallback onPressed;
+  final String desc;
 
-  const LoginButton({super.key, required this.onPressed});
+  const AppButton({super.key, required this.onPressed, required this.desc});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class LoginButton extends StatelessWidget {
         ),
         onPressed: onPressed,
         child: Text(
-          'تسجيل الدخول',
+          desc,
           style: AppTextStyles.whiteColorInterFontFamily400Weight18FontSize,
           textAlign: TextAlign.center,
         ),

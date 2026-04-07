@@ -4,20 +4,22 @@ import 'package:estate/core/routing/app_routes.dart';
 import 'package:estate/core/widgets/app_button.dart';
 import 'package:estate/core/widgets/password_text_form_field.dart';
 import 'package:estate/core/widgets/phone_number_text_form_field.dart';
-import 'package:estate/features/auth/login/widgets/remember_me_and_forgot_password_row.dart';
+import 'package:estate/features/auth/signup/widgets/policy_row.dart';
+import 'package:estate/core/widgets/username_text_form_field.dart';
 import 'package:flutter/material.dart';
 
-class LoginForm extends StatefulWidget {
-  const LoginForm({super.key});
+class SignupForm extends StatefulWidget {
+  const SignupForm({super.key});
 
   @override
-  State<LoginForm> createState() => _LoginFormState();
+  State<SignupForm> createState() => _SignupFormState();
 }
 
-class _LoginFormState extends State<LoginForm> {
+class _SignupFormState extends State<SignupForm> {
   final _formKey = GlobalKey<FormState>();
   final _phoneNumberController = TextEditingController();
   final _passwordController = TextEditingController();
+  final _usernameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -28,12 +30,14 @@ class _LoginFormState extends State<LoginForm> {
         children: [
           PhoneNumberTextFormField(controller: _phoneNumberController),
           verticalSpace(24),
+          UsernameTextFormField(controller: _usernameController),
+          verticalSpace(24),
           PasswordTextFormField(controller: _passwordController),
           verticalSpace(24),
-          RememberMeAndForgotPasswordRow(),
-          verticalSpace(32),
+          PolicyRow(),
+          verticalSpace(24),
           AppButton(
-            desc: 'تسجيل الدخول',
+            desc: 'انشاء حساب',
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 context.pushNamed(AppRoutes.homeScreen);
