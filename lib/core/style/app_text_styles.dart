@@ -19,7 +19,7 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle secondaryGray8ColorInterFontFamily400Wight24FontSize =
+  static TextStyle secondaryGray8ColorInterFontFamily400Weight24FontSize =
       TextStyle(
         color: AppColors.secondaryGray8,
         fontFamily: AppFonts.inter,
@@ -34,4 +34,52 @@ class AppTextStyles {
         fontSize: 12.sp,
         fontWeight: FontWeight.w400,
       );
+
+  static TextStyle secondaryGray8ColorInterFontFamily600Weight20FontSize =
+      TextStyle(
+        color: AppColors.secondaryGray8,
+        fontFamily: AppFonts.inter,
+        fontSize: 20.sp,
+        fontWeight: FontWeight.w600,
+      );
+
+  static TextStyle secondaryGray8ColorInterFontFamily600Weight14FontSize =
+      TextStyle(
+        color: AppColors.secondaryGray8,
+        fontFamily: AppFonts.inter,
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w600,
+      );
+
+  static TextStyle secondaryGray8ColorInterFontFamily400Weight14FontSize =
+      TextStyle(
+        color: AppColors.secondaryGray8,
+        fontFamily: AppFonts.inter,
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle secondaryGray4ColorInterFontFamily400Weight14FontSize =
+      TextStyle(
+        color: AppColors.secondaryGray4,
+        fontFamily: AppFonts.inter,
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle primaryDarkBlueColorInterFontFamily400Weight14FontSize =
+      TextStyle(
+        color: AppColors.primaryDarkBlue,
+        fontFamily: AppFonts.inter,
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle
+  grayBarelyMediumColorRalewayFontFamily600FontWeight10FontSize = TextStyle(
+    color: AppColors.grayBarelyMedium,
+    fontFamily: AppFonts.raleway,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w600,
+  );
 }

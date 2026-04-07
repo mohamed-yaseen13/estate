@@ -57,12 +57,12 @@ class OnBoardingPageDetails extends StatelessWidget {
           ),
           verticalSpace(20),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 12.h),
+            padding: EdgeInsets.symmetric(horizontal: 12.w),
             child: Text(
               model.title,
               textAlign: TextAlign.center,
               style: AppTextStyles
-                  .secondaryGray8ColorInterFontFamily400Wight24FontSize,
+                  .secondaryGray8ColorInterFontFamily400Weight24FontSize,
             ),
           ),
           verticalSpace(15),
