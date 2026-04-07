@@ -20,7 +20,7 @@ class EstateApp extends StatelessWidget {
             appBarTheme: AppBarTheme(backgroundColor: AppColors.mainColor),
           ),
           debugShowCheckedModeBanner: false,
-          initialRoute: AppRoutes.signupScreen,
+          initialRoute: AppRoutes.successNewPasswordScreen,
           onGenerateRoute: AppRouter.generateRoute,
           locale: const Locale('ar', 'AE'),
           supportedLocales: const [Locale('ar', 'AE')],

@@ -6,8 +6,15 @@ import 'package:flutter/material.dart';
 
 class PasswordTextFormField extends StatefulWidget {
   final TextEditingController controller;
+  final bool isNewPassword;
+  final bool isConfirmPassword;
 
-  const PasswordTextFormField({super.key, required this.controller});
+  const PasswordTextFormField({
+    super.key,
+    required this.controller,
+    this.isNewPassword = false,
+    this.isConfirmPassword = false,
+  });
 
   @override
   State<PasswordTextFormField> createState() => _PasswordTextFormFieldState();
@@ -21,7 +28,11 @@ class _PasswordTextFormFieldState extends State<PasswordTextFormField> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'كلمة المرور',
+          widget.isNewPassword == true
+              ? "كلمة المرور الجديدة"
+              : widget.isConfirmPassword == true
+              ? "تأكيد كلمة المرور"
+              : 'كلمة المرور',
           style: AppTextStyles
               .secondaryGray8ColorInterFontFamily600Weight14FontSize,
         ),

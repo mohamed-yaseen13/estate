@@ -82,4 +82,28 @@ class AppTextStyles {
     fontSize: 10.sp,
     fontWeight: FontWeight.w600,
   );
+
+  static TextStyle primaryDarkBlueColorMontserratFontFamily500Weight20FontSize =
+      TextStyle(
+        color: AppColors.primaryDarkBlue,
+        fontFamily: AppFonts.montserrat,
+        fontSize: 20.sp,
+        fontWeight: FontWeight.w500,
+      );
+
+  static TextStyle grayDarkColorInterFontFamily500FontWeight12FontSize =
+      TextStyle(
+        color: AppColors.grayDark,
+        fontFamily: AppFonts.inter,
+        fontSize: 12.sp,
+        fontWeight: FontWeight.w500,
+      );
+
+  static TextStyle grayMediumColorInterFontFamily400FontWeight12FontSize =
+      TextStyle(
+        color: AppColors.grayMedium,
+        fontFamily: AppFonts.inter,
+        fontSize: 12.sp,
+        fontWeight: FontWeight.w400,
+      );
 }

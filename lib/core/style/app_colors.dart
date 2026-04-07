@@ -26,4 +26,6 @@ class AppColors {
   static const Color graySoft1 = Color(0xFFF5F4F8);
 
   static const Color grayDark = Color(0xFF252B5C);
+
+  static const Color grayMedium = Color(0xFF53587A);
 }
