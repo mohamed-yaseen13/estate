@@ -1,88 +1,129 @@
 import 'package:estate/core/constants/app_constants.dart';
+import 'package:estate/core/helpers/spacing.dart';
+import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingPageDetails extends StatelessWidget {
+  final int index;
   final OnboardingModel model;
 
-  const OnBoardingPageDetails({super.key, required this.model});
+  const OnBoardingPageDetails({
+    super.key,
+    required this.model,
+    required this.index,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        // Organic Shape Area
-        SizedBox(
-          height: 350.h,
-          width: 300.w,
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              // BOTTOM IMAGE (With Background Color)
-              Positioned(
-                bottom: 20,
-                left: 20,
-                child: Container(
-                  width: 200.w,
-                  height: 200.w,
-                  decoration: BoxDecoration(
-                    color: const Color(
-                      0xFF234F68,
-                    ), // The specific blue background
-                    shape: BoxShape.circle,
-                  ),
-                  child: ClipOval(
-                    child: Image.asset(
-                      model.imageBottom,
-                      fit: BoxFit.cover,
-                      // Use opacity if you want the background color to bleed through
-                      // color: Colors.white.withOpacity(0.2),
-                      // colorBlendMode: BlendMode.lighten,
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(
+            height: 350.h,
+            width: 350.w,
+            child: Stack(
+              children: [
+                Positioned(
+                  left: index == 1 ? null : 50,
+                  right: index == 1 ? 70 : null,
+                  top: 80,
+                  child: BlobImage(
+                    width: 150.w,
+                    height: 230.h,
+                    borderRadius: 90.r,
+                    imagePath: model.imageBottom,
+                    colorFilter: ColorFilter.mode(
+                      Color(0xFF234F68).withAlpha(100),
+                      BlendMode.srcATop,
                     ),
                   ),
                 ),
-              ),
-
-              // TOP IMAGE (No Background Color)
-              Positioned(
-                top: 20,
-                right: 20,
-                child: ClipOval(
-                  child: Image.asset(
-                    model.imageTop,
-                    width: 220.w,
-                    height: 220.w,
-                    fit: BoxFit.cover,
+                Positioned(
+                  left: index == 1 ? 50 : null,
+                  right: index == 1 ? null : 70,
+                  top: 30,
+                  child: BlobImage(
+                    width: 150.w,
+                    height: 230.h,
+                    borderRadius: 85.r,
+                    imagePath: model.imageTop,
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-
-        SizedBox(height: 50.h),
-
-        // Text Sections
-        Text(
-          model.title,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 22.sp,
-            fontWeight: FontWeight.bold,
-            color: const Color(0xFF2C4A5D),
+          verticalSpace(20),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 12.h),
+            child: Text(
+              model.title,
+              textAlign: TextAlign.center,
+              style: AppTextStyles
+                  .secondaryGray8ColorInterFontFamily400Wight24FontSize,
+            ),
           ),
-        ),
-        SizedBox(height: 15.h),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 40.w),
-          child: Text(
+          verticalSpace(15),
+          Text(
             model.subtitle,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 14.sp, color: Colors.grey, height: 1.5),
+            style: AppTextStyles
+                .secondaryGray4ColorInterFontFamily400Weight12FontSize,
           ),
-        ),
-      ],
+        ],
+      ),
     );
+  }
+}
+
+class BlobImage extends StatelessWidget {
+  final double width;
+  final double height;
+  final double borderRadius;
+  final String imagePath;
+  final ColorFilter? colorFilter;
+  final BoxShadow? shadow;
+
+  const BlobImage({
+    super.key,
+    required this.width,
+    required this.height,
+    required this.borderRadius,
+    required this.imagePath,
+    this.colorFilter,
+    this.shadow,
+  });
+
+  ImageProvider get _imageProvider => AssetImage(imagePath);
+
+  @override
+  Widget build(BuildContext context) {
+    Widget image = ClipRRect(
+      borderRadius: BorderRadius.circular(borderRadius),
+      child: ColorFiltered(
+        colorFilter:
+            colorFilter ??
+            const ColorFilter.mode(Colors.transparent, BlendMode.multiply),
+        child: Image(
+          image: _imageProvider,
+          width: width,
+          height: height,
+          fit: BoxFit.cover,
+        ),
+      ),
+    );
+
+    if (shadow != null) {
+      image = DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(borderRadius),
+          boxShadow: [shadow!],
+        ),
+        child: image,
+      );
+    }
+
+    return SizedBox(width: width, height: height, child: image);
   }
 }

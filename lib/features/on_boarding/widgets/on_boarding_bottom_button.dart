@@ -1,4 +1,6 @@
 import 'package:estate/core/constants/app_constants.dart';
+import 'package:estate/core/helpers/extensions.dart';
+import 'package:estate/core/routing/app_routes.dart';
 import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,8 +28,7 @@ class OnBoardingBottomButton extends StatelessWidget {
               curve: Curves.easeIn,
             );
           } else {
-            // Navigate to Home
-            // Navigator.pushReplacementNamed(context, AppRoutes.homeScreen);
+            context.pushReplacementNamed(AppRoutes.loginScreen);
           }
         },
         style: ElevatedButton.styleFrom(

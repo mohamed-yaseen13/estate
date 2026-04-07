@@ -37,6 +37,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 itemBuilder: (context, index) {
                   return OnBoardingPageDetails(
                     model: AppConstants.pages[index],
+                    index: index,
                   );
                 },
               ),
