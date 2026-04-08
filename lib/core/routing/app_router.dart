@@ -6,7 +6,10 @@ import 'package:estate/features/auth/reset_password/ui/reset_password_screen.dar
 import 'package:estate/features/auth/signup/ui/signup_screen.dart';
 import 'package:estate/features/auth/verify_code/ui/verify_code_screen.dart';
 import 'package:estate/features/home/ui/home_screen.dart';
+import 'package:estate/features/like/ui/like_screen.dart';
 import 'package:estate/features/on_boarding/ui/on_boarding_screen.dart';
+import 'package:estate/features/profile/ui/profile_screen.dart';
+import 'package:estate/features/reserve/ui/reserve_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -57,6 +60,24 @@ class AppRouter {
       case AppRoutes.successNewPasswordScreen:
         return MaterialPageRoute(
           builder: (_) => SuccessNewPasswordScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.profileScreen:
+        return MaterialPageRoute(
+          builder: (_) => ProfileScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.reserveScreen:
+        return MaterialPageRoute(
+          builder: (_) => ReserveScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.likeScreen:
+        return MaterialPageRoute(
+          builder: (_) => LikeScreen(),
           settings: settings,
         );
 

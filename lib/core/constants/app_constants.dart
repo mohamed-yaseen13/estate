@@ -152,3 +152,5 @@ class ExploreEstateModel {
     required this.type,
   });
 }
+
+enum AppNavBarEnum { profile, like, reserve, main }
