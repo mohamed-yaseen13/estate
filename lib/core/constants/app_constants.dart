@@ -19,6 +19,21 @@ class AppConstants {
       subtitle: 'ما عليك سوى البحث عن العقار المفضل لديك واختياره',
     ),
   ];
+
+  static final List<String> filters = ['الكل', 'فيلا', 'منزل', 'شقة', 'محل'];
+
+  static final List<BannerModel> banners = [
+    BannerModel(
+      desc: 'جميع الخصومات تصل إلى 60%',
+      imagePath: 'assets/images/banner1.jpg',
+      title: 'تخفيضات الجمعه البيضاء!',
+    ),
+    BannerModel(
+      desc: 'جميع الخصومات تصل إلى 60%',
+      imagePath: 'assets/images/banner2.png',
+      title: 'الصيف العطلة',
+    ),
+  ];
 }
 
 class OnboardingModel {
@@ -32,5 +47,15 @@ class OnboardingModel {
     required this.imageBottom,
     required this.title,
     required this.subtitle,
+  });
+}
+
+class BannerModel {
+  final String imagePath, title, desc;
+
+  BannerModel({
+    required this.desc,
+    required this.imagePath,
+    required this.title,
   });
 }

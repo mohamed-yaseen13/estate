@@ -106,4 +106,60 @@ class AppTextStyles {
         fontSize: 12.sp,
         fontWeight: FontWeight.w400,
       );
+
+  static TextStyle grayDarkColorRalewayFontFamily500FontWeight14FontSize =
+      TextStyle(
+        color: AppColors.grayDark,
+        fontFamily: AppFonts.raleway,
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w500,
+      );
+
+  static TextStyle grayDarkColorRalewayFontFamily500FontWeight10FontSize =
+      TextStyle(
+        color: AppColors.grayDark,
+        fontFamily: AppFonts.raleway,
+        fontSize: 10.sp,
+        fontWeight: FontWeight.w500,
+      );
+
+  static TextStyle grayDarkColorLatoFontFamily500FontWeight28FontSize =
+      TextStyle(
+        color: AppColors.grayDark,
+        fontFamily: AppFonts.lato,
+        fontSize: 28.sp,
+        fontWeight: FontWeight.w500,
+      );
+
+  static TextStyle
+  grayBarelyMediumColorRalewayFontFamily400FontWeight12FontSize = TextStyle(
+    color: AppColors.grayBarelyMedium,
+    fontFamily: AppFonts.raleway,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle graySoft1ColorRalewatFontFamily700FontWeight10FontSize =
+      TextStyle(
+        color: AppColors.graySoft1,
+        fontFamily: AppFonts.raleway,
+        fontSize: 10.sp,
+        fontWeight: FontWeight.w700,
+      );
+
+  static TextStyle whiteColorRalewayFontFamily700FontWeight18FontSize =
+      TextStyle(
+        color: Colors.white,
+        fontFamily: AppFonts.raleway,
+        fontSize: 18.sp,
+        fontWeight: FontWeight.w700,
+      );
+
+  static TextStyle whiteColorRalewayFontFamily400FontWeight10FontSize =
+      TextStyle(
+        color: Colors.white,
+        fontFamily: AppFonts.raleway,
+        fontSize: 10.sp,
+        fontWeight: FontWeight.w400,
+      );
 }
