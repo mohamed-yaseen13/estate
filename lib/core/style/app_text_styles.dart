@@ -226,4 +226,12 @@ class AppTextStyles {
         fontSize: 6.sp,
         fontWeight: FontWeight.w500,
       );
+
+  static TextStyle graySoft1ColorMontserratFontFamily600FontWeight12FontSize =
+      TextStyle(
+        color: AppColors.graySoft1,
+        fontFamily: AppFonts.montserrat,
+        fontSize: 12.sp,
+        fontWeight: FontWeight.w600,
+      );
 }

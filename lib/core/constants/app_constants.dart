@@ -53,6 +53,48 @@ class AppConstants {
       type: 'ايجار',
     ),
   ];
+
+  static final List<TopLocationModel> topLocations = [
+    TopLocationModel(imagePath: 'assets/images/location1.jpg', name: 'جده'),
+    TopLocationModel(imagePath: 'assets/images/location2.jpg', name: 'الرياض'),
+    TopLocationModel(imagePath: 'assets/images/location3.jpg', name: 'ابو ظبي'),
+    TopLocationModel(imagePath: 'assets/images/location4.jpg', name: 'الدمام'),
+  ];
+
+  static final List<ExploreEstateModel> exploreEstates = [
+    ExploreEstateModel(
+      imagePath: 'assets/images/explore_estate1.jpg',
+      location: 'جده، السعوديه',
+      price: '220 ريال',
+      rate: '4.9',
+      title: 'برج البركه',
+      type: 'ايجار',
+    ),
+    ExploreEstateModel(
+      imagePath: 'assets/images/explore_estate2.jpg',
+      location: 'جده، السعوديه',
+      price: '271 ريال',
+      rate: '4.9',
+      title: 'برج الفردوس ',
+      type: 'ايجار',
+    ),
+    ExploreEstateModel(
+      imagePath: 'assets/images/explore_estate3.jpg',
+      location: 'جده، السعوديه',
+      price: '235 ريال',
+      rate: '4.7',
+      title: 'برج الفردوس ',
+      type: 'بيع',
+    ),
+    ExploreEstateModel(
+      imagePath: 'assets/images/explore_estate4.jpg',
+      location: 'جده، السعوديه',
+      price: '235 ريال',
+      rate: '4.7',
+      title: 'برج الفردوس ',
+      type: 'بيع',
+    ),
+  ];
 }
 
 class OnboardingModel {
@@ -83,6 +125,25 @@ class FeaturedEstateModel {
   final String imagePath, title, rate, location, price, type;
 
   FeaturedEstateModel({
+    required this.imagePath,
+    required this.location,
+    required this.price,
+    required this.rate,
+    required this.title,
+    required this.type,
+  });
+}
+
+class TopLocationModel {
+  String imagePath, name;
+
+  TopLocationModel({required this.imagePath, required this.name});
+}
+
+class ExploreEstateModel {
+  final String imagePath, price, type, title, location, rate;
+
+  ExploreEstateModel({
     required this.imagePath,
     required this.location,
     required this.price,
