@@ -34,6 +34,25 @@ class AppConstants {
       title: 'الصيف العطلة',
     ),
   ];
+
+  static final List<FeaturedEstateModel> featuredEstates = [
+    FeaturedEstateModel(
+      imagePath: 'assets/images/featured1.png',
+      location: 'جده، السعوديه',
+      price: '34290 ريال',
+      rate: '4.9',
+      title: 'شقه\nبرج الفردوس ',
+      type: 'بيع',
+    ),
+    FeaturedEstateModel(
+      imagePath: 'assets/images/featured2.jpg',
+      location: 'جده، السعوديه',
+      price: '220 ريال',
+      rate: '4.2',
+      title: 'شقه\nبرج الفردوس ',
+      type: 'ايجار',
+    ),
+  ];
 }
 
 class OnboardingModel {
@@ -57,5 +76,18 @@ class BannerModel {
     required this.desc,
     required this.imagePath,
     required this.title,
+  });
+}
+
+class FeaturedEstateModel {
+  final String imagePath, title, rate, location, price, type;
+
+  FeaturedEstateModel({
+    required this.imagePath,
+    required this.location,
+    required this.price,
+    required this.rate,
+    required this.title,
+    required this.type,
   });
 }

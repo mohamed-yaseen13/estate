@@ -1,5 +1,6 @@
 import 'package:estate/core/helpers/spacing.dart';
 import 'package:estate/features/home/widgets/banners_row.dart';
+import 'package:estate/features/home/widgets/featured_estates_row.dart';
 import 'package:estate/features/home/widgets/filters_row.dart';
 import 'package:estate/features/home/widgets/search_text_field.dart';
 import 'package:estate/features/home/widgets/welcome_stack.dart';
@@ -21,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           verticalSpace(18),
           BannersRow(),
           verticalSpace(18),
-          // Featured Estates
+          FeaturedEstatesRow(),
         ],
       ),
     );
