@@ -59,7 +59,6 @@ class ExploreEstateContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 160.w,
-      height: 230.h,
       decoration: BoxDecoration(
         color: AppColors.graySoft1,
         borderRadius: BorderRadius.circular(25.r),
@@ -99,7 +98,7 @@ class ExploreEstateContainer extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 115,
+                      top: 130,
                       left: 55,
                       child: Container(
                         width: 80.w,
@@ -129,7 +128,7 @@ class ExploreEstateContainer extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 115,
+                      top: 130,
                       left: 8,
                       child: Container(
                         width: 25.w,
@@ -151,7 +150,7 @@ class ExploreEstateContainer extends StatelessWidget {
                 ),
               ),
             ),
-            verticalSpace(18),
+            verticalSpace(8),
             Text(
               model.title,
               style: AppTextStyles
