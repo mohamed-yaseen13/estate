@@ -120,6 +120,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w700,
   );
 
+  static TextStyle grayDarkColorRalewayRegularFamily400Weight12Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.ralewayRegular,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
+
   static TextStyle grayDarkColorRalewayMediumFamily500Weight10Size = TextStyle(
     color: AppColors.grayDark,
     fontFamily: AppFonts.ralewayMedium,
