@@ -14,8 +14,7 @@ class ResendText extends StatelessWidget {
         onTap: () {},
         child: Text(
           'لم تستلم رمز التحقق ؟ أعد إرسال رمز التحقق لمرة واحدة',
-          style: AppTextStyles
-              .grayMediumColorInterFontFamily400FontWeight12FontSize,
+          style: AppTextStyles.grayMediumColorInterFamily400Weight12Size,
         ),
       ),
     );

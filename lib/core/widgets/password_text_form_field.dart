@@ -33,8 +33,7 @@ class _PasswordTextFormFieldState extends State<PasswordTextFormField> {
               : widget.isConfirmPassword == true
               ? "تأكيد كلمة المرور"
               : 'كلمة المرور',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily600Weight14FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily600Weight14Size,
         ),
         verticalSpace(4),
         AppTextFormField(

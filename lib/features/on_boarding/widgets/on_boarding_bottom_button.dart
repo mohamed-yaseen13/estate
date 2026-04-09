@@ -42,7 +42,7 @@ class OnBoardingBottomButton extends StatelessWidget {
           currentIndex == AppConstants.pages.length - 1
               ? 'ابدأ الآن'
               : 'التالي',
-          style: AppTextStyles.whiteColorInterFontFamily400Weight18FontSize,
+          style: AppTextStyles.whiteColorInterFamily400Weight18Size,
         ),
       ),
     );

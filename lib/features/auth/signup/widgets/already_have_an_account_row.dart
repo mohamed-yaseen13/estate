@@ -15,8 +15,7 @@ class AlreadyHaveAnAccountRow extends StatelessWidget {
         },
         child: Text(
           'هل لديك حساب بالفعل؟ سجّل الدخول',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily400Weight14Size,
         ),
       ),
     );

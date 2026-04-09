@@ -24,7 +24,7 @@ class AppButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           desc,
-          style: AppTextStyles.whiteColorInterFontFamily400Weight18FontSize,
+          style: AppTextStyles.whiteColorInterFamily400Weight18Size,
           textAlign: TextAlign.center,
         ),
       ),

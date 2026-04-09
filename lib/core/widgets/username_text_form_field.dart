@@ -16,8 +16,7 @@ class UsernameTextFormField extends StatelessWidget {
       children: [
         Text(
           'اسم المستخدم',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily600Weight14FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily600Weight14Size,
         ),
         verticalSpace(8),
         AppTextFormField(

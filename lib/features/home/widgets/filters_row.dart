@@ -67,10 +67,8 @@ class FilterContainer extends StatelessWidget {
           child: Text(
             label,
             style: isSelected
-                ? AppTextStyles
-                      .graySoft1ColorRalewatFontFamily700FontWeight10FontSize
-                : AppTextStyles
-                      .grayDarkColorRalewayFontFamily500FontWeight10FontSize,
+                ? AppTextStyles.graySoft1ColorRalewayBoldFamily700Weight10Size
+                : AppTextStyles.grayDarkColorRalewayMediumFamily500Weight10Size,
           ),
         ),
       ),

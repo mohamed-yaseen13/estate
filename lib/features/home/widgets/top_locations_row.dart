@@ -19,15 +19,14 @@ class TopLocationsRow extends StatelessWidget {
             children: [
               Text(
                 'أفضل المواقع',
-                style: AppTextStyles
-                    .grayDarkColorLatoFontFamily700FontWeight18FontSize,
+                style: AppTextStyles.grayDarkColorLatoBoldFamily700Weight18Size,
               ),
               InkWell(
                 onTap: () {},
                 child: Text(
                   'عرض الكل',
                   style: AppTextStyles
-                      .primaryDarkBlueColorRalewayFontFamily600Weight10FontSize,
+                      .primaryDarkBlueColorRalewaySemiBoldFamily600Weight10Size,
                 ),
               ),
             ],
@@ -85,8 +84,8 @@ class TopLocationContainer extends StatelessWidget {
             ),
             Text(
               model.name,
-              style: AppTextStyles
-                  .grayDarkColorRalewayFontFamily500FontWeight10FontSize,
+              style:
+                  AppTextStyles.grayDarkColorRalewayMediumFamily500Weight10Size,
             ),
           ],
         ),

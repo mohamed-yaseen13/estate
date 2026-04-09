@@ -45,8 +45,7 @@ class AppTextFormField extends StatelessWidget {
           borderRadius: BorderRadius.circular(12.r),
         ),
         hintText: placeholder,
-        hintStyle:
-            AppTextStyles.secondaryGray4ColorInterFontFamily400Weight14FontSize,
+        hintStyle: AppTextStyles.secondaryGray4ColorInterFamily400Weight14Size,
         suffixIcon: suffixIcon,
       ),
       validator: validator,

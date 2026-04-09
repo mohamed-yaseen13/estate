@@ -7,6 +7,7 @@ import 'package:estate/features/auth/signup/ui/signup_screen.dart';
 import 'package:estate/features/auth/verify_code/ui/verify_code_screen.dart';
 import 'package:estate/features/home/ui/home_screen.dart';
 import 'package:estate/features/like/ui/like_screen.dart';
+import 'package:estate/features/location/ui/setup_location_screen.dart';
 import 'package:estate/features/on_boarding/ui/on_boarding_screen.dart';
 import 'package:estate/features/profile/ui/profile_screen.dart';
 import 'package:estate/features/reserve/ui/reserve_screen.dart';
@@ -78,6 +79,12 @@ class AppRouter {
       case AppRoutes.likeScreen:
         return MaterialPageRoute(
           builder: (_) => LikeScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.setupLocationScreen:
+        return MaterialPageRoute(
+          builder: (_) => SetupLocationScreen(),
           settings: settings,
         );
 

@@ -15,8 +15,7 @@ class DontHaveAnAccountRow extends StatelessWidget {
         },
         child: Text(
           'ليس لديك حساب؟ سجل الآن',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily400Weight14Size,
         ),
       ),
     );

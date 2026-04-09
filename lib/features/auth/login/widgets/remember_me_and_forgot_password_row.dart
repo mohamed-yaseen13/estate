@@ -32,8 +32,7 @@ class _RememberMeAndForgotPasswordRowState
         ),
         Text(
           'تذكرني',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily400Weight14Size,
         ),
         Spacer(),
         InkWell(
@@ -42,8 +41,7 @@ class _RememberMeAndForgotPasswordRowState
           },
           child: Text(
             'هل نسيت كلمة السر ؟',
-            style: AppTextStyles
-                .primaryDarkBlueColorInterFontFamily400Weight14FontSize,
+            style: AppTextStyles.primaryDarkBlueColorInterFamily400Weight14Size,
           ),
         ),
       ],

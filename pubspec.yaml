@@ -28,12 +28,51 @@ flutter:
     - family: Inter
       fonts:
         - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf
-    - family: Lato
+    - family: Lato-Bold
+      fonts:
+        - asset: assets/fonts/Lato-Bold.ttf
+    - family: Lato-Regular
       fonts:
         - asset: assets/fonts/Lato-Regular.ttf
-    - family: Raleway
+    - family: Lato-Medium
       fonts:
-        - asset: assets/fonts/Raleway-VariableFont_wght.ttf
-    - family: Montserrat
+        - asset: assets/fonts/Lato-Medium.ttf
+    - family: Lato-SemiBold
       fonts:
-        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+        - asset: assets/fonts/Lato-SemiBold.ttf
+    - family: Raleway-Bold
+      fonts:
+        - asset: assets/fonts/Raleway-Bold.ttf
+    - family: Raleway-Medium
+      fonts:
+        - asset: assets/fonts/Raleway-Medium.ttf
+    - family: Raleway-Regular
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+    - family: Raleway-SemiBold
+      fonts:
+        - asset: assets/fonts/Raleway-SemiBold.ttf
+    - family: Montserrat-Bold
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf
+    - family: Montserrat-Medium
+      fonts:
+        - asset: assets/fonts/Montserrat-Medium.ttf
+    - family: Montserrat-Regular
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+    - family: Montserrat-SemiBold
+      fonts:
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+    - family: DMSans-Bold
+      fonts:
+        - asset: assets/fonts/DMSans-Bold.ttf
+    - family: DMSans-Medium
+      fonts:
+        - asset: assets/fonts/DMSans-Medium.ttf
+    - family: DMSans-Regular
+      fonts:
+        - asset: assets/fonts/DMSans-Regular.ttf
+    - family: DMSans-SemiBold
+      fonts:
+        - asset: assets/fonts/DMSans-SemiBold.ttf

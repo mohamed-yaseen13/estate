@@ -28,7 +28,7 @@ class _VerifyCodeFormState extends State<VerifyCodeForm> {
       width: 90.w,
       height: 70.h,
       textStyle: AppTextStyles
-          .primaryDarkBlueColorMontserratFontFamily500Weight20FontSize,
+          .primaryDarkBlueColorMontserratMediumFamily500Weight20Size,
       decoration: BoxDecoration(
         color: AppColors.graySoft1,
         border: Border.all(color: AppColors.graySoft1),

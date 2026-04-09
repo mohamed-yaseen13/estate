@@ -20,4 +20,6 @@ class AppRoutes {
   static const String likeScreen = 'likeScreen';
 
   static const String reserveScreen = 'reserveScreen';
+
+  static const String setupLocationScreen = 'setupLocationScreen';
 }

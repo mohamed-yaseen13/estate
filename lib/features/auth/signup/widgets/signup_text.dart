@@ -15,8 +15,7 @@ class SignupText extends StatelessWidget {
         verticalSpace(8),
         Text(
           "سجّل الدخول باستخدام بريدك الإلكتروني وكلمة المرور\nأو حسابك على وسائل التواصل الاجتماعي للمتابعة",
-          style: AppTextStyles
-              .secondaryGray4ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray4ColorInterFamily400Weight14Size,
           textAlign: TextAlign.start,
         ),
       ],

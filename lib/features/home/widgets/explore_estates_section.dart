@@ -18,8 +18,7 @@ class ExploreEstatesSection extends StatelessWidget {
         children: [
           Text(
             ' العقارات المجاورة',
-            style: AppTextStyles
-                .grayDarkColorLatoFontFamily700FontWeight18FontSize,
+            style: AppTextStyles.grayDarkColorLatoBoldFamily700Weight18Size,
           ),
           verticalSpace(18),
           GridView.builder(
@@ -114,13 +113,13 @@ class ExploreEstateContainer extends StatelessWidget {
                               Text(
                                 model.price,
                                 style: AppTextStyles
-                                    .graySoft1ColorMontserratFontFamily600FontWeight12FontSize,
+                                    .graySoft1ColorMontserratSemiBoldFamily600Weight12Size,
                               ),
                               if (model.type == 'ايجار')
                                 Text(
                                   '/شهر',
                                   style: AppTextStyles
-                                      .graySoft1ColorMontserratFontFamily500FontWeight6FontSize,
+                                      .graySoft1ColorMontserratMediumFamily500Weight6Size,
                                 ),
                             ],
                           ),
@@ -141,7 +140,7 @@ class ExploreEstateContainer extends StatelessWidget {
                           child: Text(
                             model.type,
                             style: AppTextStyles
-                                .whiteColorRalewayFontFamily500FontWeight8FontSize,
+                                .whiteColorRalewayMeduimFamily500Weight8Size,
                           ),
                         ),
                       ),
@@ -153,8 +152,8 @@ class ExploreEstateContainer extends StatelessWidget {
             verticalSpace(8),
             Text(
               model.title,
-              style: AppTextStyles
-                  .grayDarkColorRalewayFontFamily700FontWeight12FontSize,
+              style:
+                  AppTextStyles.grayDarkColorRalewayBoldFamily700Weight12Size,
             ),
             verticalSpace(8),
             Row(
@@ -164,7 +163,7 @@ class ExploreEstateContainer extends StatelessWidget {
                 Text(
                   model.location,
                   style: AppTextStyles
-                      .grayBarelyMediumColorRalewayFontFamily400FontWeight12FontSize,
+                      .grayMediumColorRalewayRegularFamily400Weight8Size,
                 ),
                 horizontalSpace(18),
                 SvgPicture.asset('assets/icons/star_icon.svg'),
@@ -172,7 +171,7 @@ class ExploreEstateContainer extends StatelessWidget {
                 Text(
                   model.rate,
                   style: AppTextStyles
-                      .grayMediumColorMontserratFontFamily700FontWeight8FontSize,
+                      .grayMediumColorMontserratBoldFamily700Weight8Size,
                 ),
               ],
             ),

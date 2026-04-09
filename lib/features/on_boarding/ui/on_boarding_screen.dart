@@ -3,7 +3,7 @@ import 'package:estate/core/helpers/spacing.dart';
 import 'package:estate/features/on_boarding/widgets/on_boarding_bottom_button.dart';
 import 'package:estate/features/on_boarding/widgets/on_boarding_dots.dart';
 import 'package:estate/features/on_boarding/widgets/on_boarding_page_details.dart';
-import 'package:estate/features/on_boarding/widgets/on_boarding_skip_button.dart';
+import 'package:estate/core/widgets/app_skip_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -24,7 +24,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            OnBoardingSkipButton(),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 18.h),
+              child: AppSkipButton(),
+            ),
             Expanded(
               child: PageView.builder(
                 controller: _pageController,

@@ -37,13 +37,13 @@ class WelcomeStack extends StatelessWidget {
               verticalSpace(32),
               Text(
                 'مرحباً محمود!',
-                style: AppTextStyles
-                    .grayDarkColorLatoFontFamily500FontWeight28FontSize,
+                style:
+                    AppTextStyles.grayDarkColorLatoMediumFamily500Weight25Size,
               ),
               Text(
                 'هيا بنا نبدأ الاستكشاف',
-                style: AppTextStyles
-                    .grayDarkColorLatoFontFamily500FontWeight28FontSize,
+                style:
+                    AppTextStyles.grayDarkColorLatoMediumFamily500Weight25Size,
               ),
             ],
           ),

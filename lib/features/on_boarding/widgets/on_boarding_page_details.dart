@@ -61,16 +61,15 @@ class OnBoardingPageDetails extends StatelessWidget {
             child: Text(
               model.title,
               textAlign: TextAlign.center,
-              style: AppTextStyles
-                  .secondaryGray8ColorInterFontFamily400Weight24FontSize,
+              style:
+                  AppTextStyles.secondaryGray8ColorInterFamily400Weight24Size,
             ),
           ),
           verticalSpace(15),
           Text(
             model.subtitle,
             textAlign: TextAlign.center,
-            style: AppTextStyles
-                .secondaryGray4ColorInterFontFamily400Weight12FontSize,
+            style: AppTextStyles.secondaryGray4ColorInterFamily400Weight12Size,
           ),
         ],
       ),

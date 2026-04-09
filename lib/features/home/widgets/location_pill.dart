@@ -26,8 +26,8 @@ class LocationPill extends StatelessWidget {
           horizontalSpace(8),
           Text(
             'الرياض, السعوديه',
-            style: AppTextStyles
-                .grayDarkColorRalewayFontFamily500FontWeight14FontSize,
+            style:
+                AppTextStyles.grayDarkColorRalewayMediumFamily500Weight14Size,
           ),
           horizontalSpace(8),
           Icon(

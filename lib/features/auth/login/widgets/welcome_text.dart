@@ -15,8 +15,7 @@ class WelcomeText extends StatelessWidget {
         verticalSpace(8),
         Text(
           "سجّل الدخول باستخدام رقم الهاتف وكلمة المرور\nأو حسابك على وسائل التواصل الاجتماعي للمتابعة",
-          style: AppTextStyles
-              .secondaryGray4ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray4ColorInterFamily400Weight14Size,
         ),
       ],
     );

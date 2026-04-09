@@ -24,14 +24,14 @@ class SuccessNewPasswordScreen extends StatelessWidget {
             verticalSpace(18),
             Text(
               'تم تغيير كلمه المرور بنجاح!',
-              style: AppTextStyles
-                  .secondaryGray8ColorInterFontFamily600Weight20FontSize,
+              style:
+                  AppTextStyles.secondaryGray8ColorInterFamily600Weight20Size,
             ),
             verticalSpace(8),
             Text(
               'تم تغيير كلمة مرورك. يرجى تسجيل الدخول مرة أخرى باستخدام كلمة مرور جديدة.',
-              style: AppTextStyles
-                  .secondaryGray4ColorInterFontFamily400Weight14FontSize,
+              style:
+                  AppTextStyles.secondaryGray4ColorInterFamily400Weight14Size,
             ),
             verticalSpace(48),
             AppButton(

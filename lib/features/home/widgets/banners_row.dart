@@ -65,13 +65,13 @@ class BannerContainer extends StatelessWidget {
                     Text(
                       banner.title,
                       style: AppTextStyles
-                          .whiteColorRalewayFontFamily700FontWeight18FontSize,
+                          .whiteColorRalewayBoldFamily700Weight18Size,
                     ),
                     verticalSpace(18),
                     Text(
                       banner.desc,
                       style: AppTextStyles
-                          .whiteColorRalewayFontFamily400FontWeight10FontSize,
+                          .whiteColorRalewayRegularFamily400Weight10Size,
                     ),
                   ],
                 ),

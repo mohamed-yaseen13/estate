@@ -12,14 +12,12 @@ class ResetPasswordText extends StatelessWidget {
       children: [
         Text(
           'هل نسيت كلمة السر',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily600Weight20FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily600Weight20Size,
         ),
         verticalSpace(8),
         Text(
           'ادخل رقم الهاتف الخاص بك لارسال رمز التحقق لإعادة تعيين كلمة مرورك',
-          style: AppTextStyles
-              .secondaryGray4ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray4ColorInterFamily400Weight14Size,
         ),
       ],
     );

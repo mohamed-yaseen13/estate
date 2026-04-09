@@ -18,7 +18,7 @@ class DividerRow extends StatelessWidget {
           child: Text(
             'أو',
             style: AppTextStyles
-                .grayBarelyMediumColorRalewayFontFamily600FontWeight10FontSize,
+                .grayBarelyMediumColorRalewaySemiBoldFamily600Weight10Size,
           ),
         ),
         Expanded(

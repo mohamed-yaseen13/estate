@@ -12,14 +12,12 @@ class VerifyCodeText extends StatelessWidget {
       children: [
         Text(
           'ادخل رمز التحقق',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily600Weight20FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily600Weight20Size,
         ),
         verticalSpace(8),
         Text(
           'يرجى إدخال رمز التحقق المكون من 4 أرقام والذي تم إرساله إلى رقم الهاتف',
-          style: AppTextStyles
-              .secondaryGray4ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray4ColorInterFamily400Weight14Size,
         ),
       ],
     );

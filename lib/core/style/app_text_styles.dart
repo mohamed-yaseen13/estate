@@ -4,250 +4,244 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextStyles {
-  static TextStyle secondaryGray6ColorInterFontFamily400Weight12FontSize =
-      TextStyle(
-        fontFamily: AppFonts.inter,
-        color: AppColors.secondaryGray6,
-        fontSize: 12.sp,
-        fontWeight: FontWeight.w400,
-      );
+  // inter
+  static TextStyle secondaryGray6ColorInterFamily400Weight12Size = TextStyle(
+    fontFamily: AppFonts.inter,
+    color: AppColors.secondaryGray6,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
 
-  static TextStyle whiteColorInterFontFamily400Weight18FontSize = TextStyle(
+  static TextStyle whiteColorInterFamily400Weight18Size = TextStyle(
     fontFamily: AppFonts.inter,
     color: Colors.white,
     fontSize: 18.sp,
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle secondaryGray8ColorInterFontFamily400Weight24FontSize =
-      TextStyle(
-        color: AppColors.secondaryGray8,
-        fontFamily: AppFonts.inter,
-        fontSize: 24.sp,
-        fontWeight: FontWeight.w400,
-      );
-
-  static TextStyle secondaryGray4ColorInterFontFamily400Weight12FontSize =
-      TextStyle(
-        color: AppColors.secondaryGray4,
-        fontFamily: AppFonts.inter,
-        fontSize: 12.sp,
-        fontWeight: FontWeight.w400,
-      );
-
-  static TextStyle secondaryGray4ColorInterFontFamily500Weight10FontSize =
-      TextStyle(
-        color: AppColors.secondaryGray4,
-        fontFamily: AppFonts.inter,
-        fontSize: 10.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle secondaryGray8ColorInterFontFamily600Weight20FontSize =
-      TextStyle(
-        color: AppColors.secondaryGray8,
-        fontFamily: AppFonts.inter,
-        fontSize: 20.sp,
-        fontWeight: FontWeight.w600,
-      );
-
-  static TextStyle secondaryGray8ColorInterFontFamily600Weight14FontSize =
-      TextStyle(
-        color: AppColors.secondaryGray8,
-        fontFamily: AppFonts.inter,
-        fontSize: 14.sp,
-        fontWeight: FontWeight.w600,
-      );
-
-  static TextStyle secondaryGray8ColorInterFontFamily400Weight14FontSize =
-      TextStyle(
-        color: AppColors.secondaryGray8,
-        fontFamily: AppFonts.inter,
-        fontSize: 14.sp,
-        fontWeight: FontWeight.w400,
-      );
-
-  static TextStyle secondaryGray4ColorInterFontFamily400Weight14FontSize =
-      TextStyle(
-        color: AppColors.secondaryGray4,
-        fontFamily: AppFonts.inter,
-        fontSize: 14.sp,
-        fontWeight: FontWeight.w400,
-      );
-
-  static TextStyle primaryDarkBlueColorInterFontFamily400Weight14FontSize =
-      TextStyle(
-        color: AppColors.primaryDarkBlue,
-        fontFamily: AppFonts.inter,
-        fontSize: 14.sp,
-        fontWeight: FontWeight.w400,
-      );
-
-  static TextStyle primaryDarkBlueColorInterFontFamily500Weight10FontSize =
-      TextStyle(
-        color: AppColors.primaryDarkBlue,
-        fontFamily: AppFonts.inter,
-        fontSize: 10.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle primaryDarkBlueColorRalewayFontFamily600Weight10FontSize =
-      TextStyle(
-        color: AppColors.primaryDarkBlue,
-        fontFamily: AppFonts.raleway,
-        fontSize: 10.sp,
-        fontWeight: FontWeight.w600,
-      );
-
-  static TextStyle
-  grayBarelyMediumColorRalewayFontFamily600FontWeight10FontSize = TextStyle(
-    color: AppColors.grayBarelyMedium,
-    fontFamily: AppFonts.raleway,
-    fontSize: 10.sp,
-    fontWeight: FontWeight.w600,
+  static TextStyle secondaryGray8ColorInterFamily400Weight24Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w400,
   );
 
-  static TextStyle primaryDarkBlueColorMontserratFontFamily500Weight20FontSize =
-      TextStyle(
-        color: AppColors.primaryDarkBlue,
-        fontFamily: AppFonts.montserrat,
-        fontSize: 20.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle grayDarkColorInterFontFamily500FontWeight12FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.inter,
-        fontSize: 12.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle grayMediumColorInterFontFamily400FontWeight12FontSize =
-      TextStyle(
-        color: AppColors.grayMedium,
-        fontFamily: AppFonts.inter,
-        fontSize: 12.sp,
-        fontWeight: FontWeight.w400,
-      );
-
-  static TextStyle grayMediumColorMontserratFontFamily700FontWeight8FontSize =
-      TextStyle(
-        color: AppColors.grayMedium,
-        fontFamily: AppFonts.montserrat,
-        fontSize: 8.sp,
-        fontWeight: FontWeight.w700,
-      );
-
-  static TextStyle grayDarkColorRalewayFontFamily500FontWeight14FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.raleway,
-        fontSize: 14.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle grayDarkColorMontserratFontFamily600FontWeight16FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.montserrat,
-        fontSize: 16.sp,
-        fontWeight: FontWeight.w600,
-      );
-
-  static TextStyle grayDarkColorMontserratFontFamily500FontWeight8FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.montserrat,
-        fontSize: 8.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle grayDarkColorRalewayFontFamily700FontWeight12FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.raleway,
-        fontSize: 12.sp,
-        fontWeight: FontWeight.w700,
-      );
-
-  static TextStyle grayDarkColorRalewayFontFamily500FontWeight10FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.raleway,
-        fontSize: 10.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle grayDarkColorLatoFontFamily500FontWeight28FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.lato,
-        fontSize: 28.sp,
-        fontWeight: FontWeight.w500,
-      );
-
-  static TextStyle grayDarkColorLatoFontFamily700FontWeight18FontSize =
-      TextStyle(
-        color: AppColors.grayDark,
-        fontFamily: AppFonts.lato,
-        fontSize: 18.sp,
-        fontWeight: FontWeight.w700,
-      );
-
-  static TextStyle
-  grayBarelyMediumColorRalewayFontFamily400FontWeight12FontSize = TextStyle(
-    color: AppColors.grayBarelyMedium,
-    fontFamily: AppFonts.raleway,
+  static TextStyle secondaryGray4ColorInterFamily400Weight12Size = TextStyle(
+    color: AppColors.secondaryGray4,
+    fontFamily: AppFonts.inter,
     fontSize: 12.sp,
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle graySoft1ColorRalewatFontFamily700FontWeight10FontSize =
+  static TextStyle secondaryGray4ColorInterFamily500Weight10Size = TextStyle(
+    color: AppColors.secondaryGray4,
+    fontFamily: AppFonts.inter,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle secondaryGray8ColorInterFamily600Weight20Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle secondaryGray8ColorInterFamily600Weight14Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle secondaryGray8ColorInterFamily400Weight14Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle secondaryGray4ColorInterFamily400Weight14Size = TextStyle(
+    color: AppColors.secondaryGray4,
+    fontFamily: AppFonts.inter,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle primaryDarkBlueColorInterFamily400Weight14Size = TextStyle(
+    color: AppColors.primaryDarkBlue,
+    fontFamily: AppFonts.inter,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle primaryDarkBlueColorInterFamily500Weight10Size = TextStyle(
+    color: AppColors.primaryDarkBlue,
+    fontFamily: AppFonts.inter,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle grayDarkColorInterFamily500Weight12Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.inter,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle grayMediumColorInterFamily400Weight12Size = TextStyle(
+    color: AppColors.grayMedium,
+    fontFamily: AppFonts.inter,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  // raleway
+
+  static TextStyle grayDarkColorRalewayMediumFamily500Weight14Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.ralewayMedium,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle grayBarelyMediumColorRalewaySemiBoldFamily600Weight10Size =
       TextStyle(
-        color: AppColors.graySoft1,
-        fontFamily: AppFonts.raleway,
+        color: AppColors.grayBarelyMedium,
+        fontFamily: AppFonts.ralewaySemiBold,
         fontSize: 10.sp,
-        fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.w600,
       );
 
-  static TextStyle whiteColorRalewayFontFamily700FontWeight18FontSize =
-      TextStyle(
-        color: Colors.white,
-        fontFamily: AppFonts.raleway,
-        fontSize: 18.sp,
-        fontWeight: FontWeight.w700,
-      );
+  static TextStyle grayDarkColorRalewayBoldFamily700Weight12Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.ralewayBold,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w700,
+  );
 
-  static TextStyle whiteColorRalewayFontFamily400FontWeight10FontSize =
+  static TextStyle grayDarkColorRalewayMediumFamily500Weight10Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.ralewayMedium,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle grayMediumColorRalewayRegularFamily400Weight8Size =
       TextStyle(
-        color: Colors.white,
-        fontFamily: AppFonts.raleway,
-        fontSize: 10.sp,
+        color: AppColors.grayMedium,
+        fontFamily: AppFonts.ralewayRegular,
+        fontSize: 8.sp,
         fontWeight: FontWeight.w400,
       );
 
-  static TextStyle whiteColorRalewayFontFamily500FontWeight8FontSize =
+  static TextStyle grayBarelyMediumColorRalewayRegularFamily400Weight12Size =
       TextStyle(
-        color: Colors.white,
-        fontFamily: AppFonts.raleway,
+        color: AppColors.grayBarelyMedium,
+        fontFamily: AppFonts.ralewayRegular,
+        fontSize: 12.sp,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle graySoft1ColorRalewayBoldFamily700Weight10Size = TextStyle(
+    color: AppColors.graySoft1,
+    fontFamily: AppFonts.ralewayBold,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle whiteColorRalewayBoldFamily700Weight18Size = TextStyle(
+    color: Colors.white,
+    fontFamily: AppFonts.ralewayBold,
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle whiteColorRalewayRegularFamily400Weight10Size = TextStyle(
+    color: Colors.white,
+    fontFamily: AppFonts.ralewayRegular,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle whiteColorRalewayMeduimFamily500Weight8Size = TextStyle(
+    color: Colors.white,
+    fontFamily: AppFonts.ralewayMedium,
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle primaryDarkBlueColorRalewaySemiBoldFamily600Weight10Size =
+      TextStyle(
+        color: AppColors.primaryDarkBlue,
+        fontFamily: AppFonts.ralewaySemiBold,
+        fontSize: 10.sp,
+        fontWeight: FontWeight.w600,
+      );
+
+  // Montserrat
+
+  static TextStyle primaryDarkBlueColorMontserratMediumFamily500Weight20Size =
+      TextStyle(
+        color: AppColors.primaryDarkBlue,
+        fontFamily: AppFonts.montserratMedium,
+        fontSize: 20.sp,
+        fontWeight: FontWeight.w500,
+      );
+
+  static TextStyle grayMediumColorMontserratBoldFamily700Weight8Size =
+      TextStyle(
+        color: AppColors.grayMedium,
+        fontFamily: AppFonts.montserratBold,
+        fontSize: 8.sp,
+        fontWeight: FontWeight.w700,
+      );
+
+  static TextStyle grayDarkColorMontserratSemiBoldFamily600Weight16Size =
+      TextStyle(
+        color: AppColors.grayDark,
+        fontFamily: AppFonts.montserratSemiBold,
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w600,
+      );
+
+  static TextStyle grayDarkColorMontserratMediumFamily500Weight8Size =
+      TextStyle(
+        color: AppColors.grayDark,
+        fontFamily: AppFonts.montserratMedium,
         fontSize: 8.sp,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle graySoft1ColorMontserratFontFamily500FontWeight6FontSize =
+  static TextStyle graySoft1ColorMontserratMediumFamily500Weight6Size =
       TextStyle(
         color: AppColors.graySoft1,
-        fontFamily: AppFonts.montserrat,
+        fontFamily: AppFonts.montserratMedium,
         fontSize: 6.sp,
         fontWeight: FontWeight.w500,
       );
 
-  static TextStyle graySoft1ColorMontserratFontFamily600FontWeight12FontSize =
+  static TextStyle graySoft1ColorMontserratSemiBoldFamily600Weight12Size =
       TextStyle(
         color: AppColors.graySoft1,
-        fontFamily: AppFonts.montserrat,
+        fontFamily: AppFonts.montserratSemiBold,
         fontSize: 12.sp,
         fontWeight: FontWeight.w600,
       );
+
+  // lato
+
+  static TextStyle grayDarkColorLatoMediumFamily500Weight25Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.latoMedium,
+    fontSize: 25.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle grayDarkColorLatoBoldFamily700Weight18Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.latoBold,
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w700,
+  );
 }

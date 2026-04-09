@@ -16,8 +16,7 @@ class PhoneNumberTextFormField extends StatelessWidget {
       children: [
         Text(
           'رقم الهاتف',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily600Weight14FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily600Weight14Size,
         ),
         verticalSpace(4),
         AppTextFormField(

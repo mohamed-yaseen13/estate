@@ -28,8 +28,7 @@ class _PolicyRowState extends State<PolicyRow> {
         ),
         Text(
           'أوافق على الشروط وسياسة الخصوصية',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily400Weight14Size,
         ),
       ],
     );

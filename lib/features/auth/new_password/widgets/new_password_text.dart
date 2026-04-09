@@ -12,14 +12,12 @@ class NewPasswordText extends StatelessWidget {
       children: [
         Text(
           'إنشاء كلمة مرور جديدة',
-          style: AppTextStyles
-              .secondaryGray8ColorInterFontFamily600Weight20FontSize,
+          style: AppTextStyles.secondaryGray8ColorInterFamily600Weight20Size,
         ),
         verticalSpace(8),
         Text(
           'الرجاء إدخال كلمة مرور جديدةللتغيير',
-          style: AppTextStyles
-              .secondaryGray4ColorInterFontFamily400Weight14FontSize,
+          style: AppTextStyles.secondaryGray4ColorInterFamily400Weight14Size,
         ),
       ],
     );

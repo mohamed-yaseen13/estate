@@ -66,8 +66,7 @@ class _CountdownTimerState extends State<CountdownTimer> {
             horizontalSpace(8),
             Text(
               _formattedTime,
-              style: AppTextStyles
-                  .grayDarkColorInterFontFamily500FontWeight12FontSize,
+              style: AppTextStyles.grayDarkColorInterFamily500Weight12Size,
             ),
           ],
         ),

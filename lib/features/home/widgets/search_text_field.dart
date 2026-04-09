@@ -38,7 +38,7 @@ class SearchTextField extends StatelessWidget {
                     ),
                     hintText: 'ابحث عن منزل، شقة، إلخ',
                     hintStyle: AppTextStyles
-                        .grayBarelyMediumColorRalewayFontFamily400FontWeight12FontSize,
+                        .grayBarelyMediumColorRalewayRegularFamily400Weight12Size,
                     suffixIcon: SvgPicture.asset(
                       'assets/icons/search_suffix_icon.svg',
                     ),

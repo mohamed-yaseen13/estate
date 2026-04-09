@@ -21,15 +21,14 @@ class FeaturedEstatesRow extends StatelessWidget {
             children: [
               Text(
                 'عقارات مميزه',
-                style: AppTextStyles
-                    .grayDarkColorLatoFontFamily700FontWeight18FontSize,
+                style: AppTextStyles.grayDarkColorLatoBoldFamily700Weight18Size,
               ),
               InkWell(
                 onTap: () {},
                 child: Text(
                   'عرض الكل',
                   style: AppTextStyles
-                      .primaryDarkBlueColorRalewayFontFamily600Weight10FontSize,
+                      .primaryDarkBlueColorRalewaySemiBoldFamily600Weight10Size,
                 ),
               ),
             ],
@@ -118,7 +117,7 @@ class FeaturedEstateContainer extends StatelessWidget {
                           child: Text(
                             model.type,
                             style: AppTextStyles
-                                .whiteColorRalewayFontFamily500FontWeight8FontSize,
+                                .whiteColorRalewayMeduimFamily500Weight8Size,
                           ),
                         ),
                       ),
@@ -134,7 +133,7 @@ class FeaturedEstateContainer extends StatelessWidget {
                 Text(
                   model.title,
                   style: AppTextStyles
-                      .grayDarkColorRalewayFontFamily700FontWeight12FontSize,
+                      .grayDarkColorRalewayBoldFamily700Weight12Size,
                 ),
                 verticalSpace(8),
                 Row(
@@ -144,7 +143,7 @@ class FeaturedEstateContainer extends StatelessWidget {
                     Text(
                       model.rate,
                       style: AppTextStyles
-                          .grayMediumColorMontserratFontFamily700FontWeight8FontSize,
+                          .grayMediumColorMontserratBoldFamily700Weight8Size,
                     ),
                   ],
                 ),
@@ -156,7 +155,7 @@ class FeaturedEstateContainer extends StatelessWidget {
                     Text(
                       model.location,
                       style: AppTextStyles
-                          .grayBarelyMediumColorRalewayFontFamily400FontWeight12FontSize,
+                          .grayMediumColorRalewayRegularFamily400Weight8Size,
                     ),
                   ],
                 ),
@@ -166,13 +165,13 @@ class FeaturedEstateContainer extends StatelessWidget {
                     Text(
                       model.price,
                       style: AppTextStyles
-                          .grayDarkColorMontserratFontFamily600FontWeight16FontSize,
+                          .grayDarkColorMontserratSemiBoldFamily600Weight16Size,
                     ),
                     if (model.type == 'ايجار')
                       Text(
                         '/شهر',
                         style: AppTextStyles
-                            .grayDarkColorMontserratFontFamily500FontWeight8FontSize,
+                            .grayDarkColorMontserratMediumFamily500Weight8Size,
                       ),
                   ],
                 ),

@@ -53,10 +53,8 @@ class _AppNavBarState extends State<AppNavBar> {
           Text(
             label,
             style: isSelected
-                ? AppTextStyles
-                      .primaryDarkBlueColorInterFontFamily500Weight10FontSize
-                : AppTextStyles
-                      .secondaryGray4ColorInterFontFamily500Weight10FontSize,
+                ? AppTextStyles.primaryDarkBlueColorInterFamily500Weight10Size
+                : AppTextStyles.secondaryGray4ColorInterFamily500Weight10Size,
           ),
         ],
       ),
