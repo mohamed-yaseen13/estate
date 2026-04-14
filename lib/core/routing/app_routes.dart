@@ -30,4 +30,6 @@ class AppRoutes {
   static const String addEstateScreen2 = 'addEstateScreen2';
 
   static const String addEstateScreen3 = 'addEstateScreen3';
+
+  static const String estateDetailsScreen = 'estateDetailsScreen';
 }

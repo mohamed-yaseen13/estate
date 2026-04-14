@@ -152,6 +152,44 @@ class AppConstants {
       ],
     ),
   ];
+
+  static final estate = EstateModel(
+    rate: '4.9',
+    type: 'شقة',
+    coverImagePath: 'assets/images/estate_details_image.jpg',
+    numberOfImages: 6,
+    imagesPath: [
+      'assets/images/estate_details_image1.jpg',
+      'assets/images/estate_details_image2.jpg',
+      'assets/images/estate_details_image3.jpg',
+    ],
+    block: 'برج البركة',
+    location: 'جده , السعوديه',
+    price: '310 ريال شهريًا',
+    bedRooms: 3,
+    bathRooms: 2,
+    area: '1880 قدم مربع',
+    buildings: 2004,
+    garage: '1 داخلي',
+    isSell: false,
+    desc:
+        'شقة مميزة للبيع بموقع حيوي وقريب من جميع الخدمات، تتمتع بتصميم عصري ومساحة واسعة توفر الراحة والخصوصية. تتكون الشقة من عدد مناسب من الغرف المضيئة بفضل الإطلالة الجيدة والنوافذ الكبيرة التي تسمح بدخول الضوء الطبيعي طوال اليوم، بالإضافة إلى صالة استقبال أنيقة، ومطبخ عملي مجهز، وحمام بتشطيبات عالية الجودة. تقع الشقة داخل عمارة حديثة مزودة بمصعد وأمن، مما يجعلها خيارًا مثاليًا للسكن العائلي أو للاستثمار. كما تتميز بقربها من المدارس، والمستشفيات، ووسائل المواصلات، مما يسهل الحياة اليومية ويوفر الوقت والجهد.',
+    sellerName: 'محمد ابرهيم',
+    sellerJob: 'وكيل عقاري',
+    sellerImagePAth: 'assets/images/notification_image2.png',
+  );
+
+  static const String lightMapStyle = '''
+[
+  {"featureType": "all", "elementType": "geometry", "stylers": [{"color": "#f5f5f5"}]},
+  {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#e9e9e9"}]},
+  {"featureType": "water", "elementType": "labels.text.fill", "stylers": [{"color": "#9e9e9e"}]},
+  {"featureType": "road", "elementType": "geometry", "stylers": [{"color": "#ffffff"}]},
+  {"featureType": "road.arterial", "elementType": "labels.text.fill", "stylers": [{"color": "#757575"}]},
+  {"featureType": "administrative", "elementType": "geometry", "stylers": [{"color": "#e0e0e0"}]},
+  {"featureType": "poi", "elementType": "geometry", "stylers": [{"color": "#eeeeee"}]}
+]
+''';
 }
 
 enum AppNavBarEnum { profile, like, reserve, main }

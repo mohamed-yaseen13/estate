@@ -1,3 +1,4 @@
+import 'package:estate/core/constants/app_constants.dart';
 import 'package:estate/core/helpers/spacing.dart';
 import 'package:estate/core/style/app_colors.dart';
 import 'package:estate/core/style/app_text_styles.dart';
@@ -41,7 +42,7 @@ class _SetupLocationScreenState extends State<SetupLocationScreen> {
   void initState() {
     super.initState();
     BitmapDescriptor.asset(
-      const ImageConfiguration(size: Size(48, 48)),
+      const ImageConfiguration(size: Size(34, 51)),
       'assets/icons/map_marker.png',
     ).then((marker) {
       setState(() => _customMarker = marker);
@@ -80,7 +81,7 @@ class _SetupLocationScreenState extends State<SetupLocationScreen> {
                   child: Stack(
                     children: [
                       GoogleMap(
-                        style: _lightMapStyle,
+                        style: AppConstants.lightMapStyle,
                         initialCameraPosition: CameraPosition(
                           target: _initialPosition,
                           zoom: 13,
@@ -154,7 +155,7 @@ class _SetupLocationScreenState extends State<SetupLocationScreen> {
     return Stack(
       children: [
         GoogleMap(
-          style: _lightMapStyle,
+          style: AppConstants.lightMapStyle,
           initialCameraPosition: CameraPosition(
             target: _initialPosition,
             zoom: 14,
@@ -260,15 +261,3 @@ class _SetupLocationScreenState extends State<SetupLocationScreen> {
     );
   }
 }
-
-const String _lightMapStyle = '''
-[
-  {"featureType": "all", "elementType": "geometry", "stylers": [{"color": "#f5f5f5"}]},
-  {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#e9e9e9"}]},
-  {"featureType": "water", "elementType": "labels.text.fill", "stylers": [{"color": "#9e9e9e"}]},
-  {"featureType": "road", "elementType": "geometry", "stylers": [{"color": "#ffffff"}]},
-  {"featureType": "road.arterial", "elementType": "labels.text.fill", "stylers": [{"color": "#757575"}]},
-  {"featureType": "administrative", "elementType": "geometry", "stylers": [{"color": "#e0e0e0"}]},
-  {"featureType": "poi", "elementType": "geometry", "stylers": [{"color": "#eeeeee"}]}
-]
-''';

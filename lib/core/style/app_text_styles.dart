@@ -61,6 +61,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static TextStyle secondaryGray8ColorInterFamily600Weight12Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+  );
+
   static TextStyle secondaryGray8ColorInterFamily400Weight14Size = TextStyle(
     color: AppColors.secondaryGray8,
     fontFamily: AppFonts.inter,
@@ -108,6 +115,13 @@ class AppTextStyles {
     fontFamily: AppFonts.inter,
     fontSize: 14.sp,
     fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle primaryDarkBlueColorInterFamily700Weight14Size = TextStyle(
+    color: AppColors.primaryDarkBlue,
+    fontFamily: AppFonts.inter,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
   );
 
   static TextStyle primaryDarkBlueColorInterFamily500Weight10Size = TextStyle(
@@ -220,6 +234,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static TextStyle whiteColorRalewayMeduimFamily500Weight10Size = TextStyle(
+    color: Colors.white,
+    fontFamily: AppFonts.ralewayMedium,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle primaryDarkBlueColorRalewaySemiBoldFamily600Weight10Size =
       TextStyle(
         color: AppColors.primaryDarkBlue,
@@ -238,6 +259,14 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
       );
 
+  static TextStyle graySoft2ColorMontserratMediumFamily500Weight18Size =
+      TextStyle(
+        color: AppColors.graySoft2,
+        fontFamily: AppFonts.montserratMedium,
+        fontSize: 18.sp,
+        fontWeight: FontWeight.w500,
+      );
+
   static TextStyle grayMediumColorMontserratBoldFamily700Weight8Size =
       TextStyle(
         color: AppColors.grayMedium,
@@ -245,6 +274,13 @@ class AppTextStyles {
         fontSize: 8.sp,
         fontWeight: FontWeight.w700,
       );
+
+  static TextStyle whiteColorMontserratBoldFamily700Weight14Size = TextStyle(
+    color: Colors.white,
+    fontFamily: AppFonts.montserratBold,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w700,
+  );
 
   static TextStyle grayDarkColorMontserratSemiBoldFamily600Weight16Size =
       TextStyle(

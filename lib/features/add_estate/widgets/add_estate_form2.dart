@@ -20,7 +20,8 @@ class _AddEstateForm2State extends State<AddEstateForm2> {
   final _formKey = GlobalKey<FormState>();
   final List<String> _options = ['جده', 'الرياض', 'ابو ظبي', 'الدمام'];
   String _selectedEstate = 'جده';
-  final _controller = TextEditingController();
+  final _districtController = TextEditingController();
+  final _streetController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +72,7 @@ class _AddEstateForm2State extends State<AddEstateForm2> {
             style: AppTextStyles.secondaryGray8ColorInterFamily600Weight14Size,
           ),
           AppTextFormField(
-            controller: _controller,
+            controller: _districtController,
             placeholder: 'حي النرجس',
             validator: (value) {
               if (value.isNullOrEmpty()) {
@@ -98,7 +99,7 @@ class _AddEstateForm2State extends State<AddEstateForm2> {
             ],
           ),
           AppTextFormField(
-            controller: _controller,
+            controller: _streetController,
             placeholder: 'شارع النصر',
             validator: (value) {
               if (value.isNullOrEmpty()) {

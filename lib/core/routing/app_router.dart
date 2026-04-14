@@ -8,6 +8,7 @@ import 'package:estate/features/auth/new_password/ui/success_new_password_screen
 import 'package:estate/features/auth/reset_password/ui/reset_password_screen.dart';
 import 'package:estate/features/auth/signup/ui/signup_screen.dart';
 import 'package:estate/features/auth/verify_code/ui/verify_code_screen.dart';
+import 'package:estate/features/estate_details/ui/estate_details_screen.dart';
 import 'package:estate/features/home/ui/home_screen.dart';
 import 'package:estate/features/like/ui/like_screen.dart';
 import 'package:estate/features/location/ui/setup_location_screen.dart';
@@ -113,6 +114,12 @@ class AppRouter {
       case AppRoutes.addEstateScreen3:
         return MaterialPageRoute(
           builder: (_) => AddEstateScreen3(),
+          settings: settings,
+        );
+
+      case AppRoutes.estateDetailsScreen:
+        return MaterialPageRoute(
+          builder: (_) => EstateDetailsScreen(),
           settings: settings,
         );
 
