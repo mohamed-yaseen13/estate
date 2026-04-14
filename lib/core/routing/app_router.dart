@@ -16,6 +16,7 @@ import 'package:estate/features/notification/ui/notification_screen.dart';
 import 'package:estate/features/on_boarding/ui/on_boarding_screen.dart';
 import 'package:estate/features/profile/ui/profile_screen.dart';
 import 'package:estate/features/reserve/ui/reserve_screen.dart';
+import 'package:estate/features/reserve_confirmation/ui/reserve_confirmation_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -120,6 +121,12 @@ class AppRouter {
       case AppRoutes.estateDetailsScreen:
         return MaterialPageRoute(
           builder: (_) => EstateDetailsScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.reserveConfirmationScreen:
+        return MaterialPageRoute(
+          builder: (_) => ReserveConfirmationScreen(),
           settings: settings,
         );
 

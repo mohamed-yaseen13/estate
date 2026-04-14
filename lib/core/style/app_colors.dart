@@ -38,4 +38,6 @@ class AppColors {
   static const Color grayDark2 = Color(0xFF3F467C);
 
   static const Color grayMedium = Color(0xFF53587A);
+
+  static const Color gray = Color(0xFF565656);
 }

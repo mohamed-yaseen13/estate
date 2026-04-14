@@ -1,7 +1,7 @@
 import 'package:estate/core/constants/app_constants.dart';
 import 'package:estate/core/helpers/spacing.dart';
-import 'package:estate/core/models/app_models.dart';
 import 'package:estate/core/style/app_text_styles.dart';
+import 'package:estate/features/estate_details/models/estate_details_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -10,7 +10,7 @@ class EstateDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final EstateModel estate = AppConstants.estate;
+    final EstateDetailsModel estate = AppConstants.estate;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

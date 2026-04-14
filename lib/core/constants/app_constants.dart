@@ -1,4 +1,8 @@
-import 'package:estate/core/models/app_models.dart';
+import 'package:estate/features/estate_details/models/estate_details_model.dart';
+import 'package:estate/features/home/models/home_models.dart';
+import 'package:estate/features/notification/models/notification_model.dart';
+import 'package:estate/features/on_boarding/models/on_boarding_models.dart';
+import 'package:estate/features/reserve_confirmation/models/reserve_estate_model.dart';
 
 class AppConstants {
   static final List<OnboardingModel> pages = [
@@ -153,7 +157,7 @@ class AppConstants {
     ),
   ];
 
-  static final estate = EstateModel(
+  static final estate = EstateDetailsModel(
     rate: '4.9',
     type: 'شقة',
     coverImagePath: 'assets/images/estate_details_image.jpg',
@@ -179,7 +183,7 @@ class AppConstants {
     sellerImagePAth: 'assets/images/notification_image2.png',
   );
 
-  static const String lightMapStyle = '''
+  static final String lightMapStyle = '''
 [
   {"featureType": "all", "elementType": "geometry", "stylers": [{"color": "#f5f5f5"}]},
   {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#e9e9e9"}]},
@@ -190,6 +194,14 @@ class AppConstants {
   {"featureType": "poi", "elementType": "geometry", "stylers": [{"color": "#eeeeee"}]}
 ]
 ''';
+
+  static final ReserveEstateModel reserveEstate = ReserveEstateModel(
+    block: 'شقه برج الفردوس \nبالسعوديه',
+    imagePath: 'assets/images/explore_estate1.jpg',
+    isSell: false,
+    location: 'جده , السعوديه',
+    type: 'شقة',
+  );
 }
 
 enum AppNavBarEnum { profile, like, reserve, main }

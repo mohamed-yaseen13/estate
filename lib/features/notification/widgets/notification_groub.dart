@@ -1,6 +1,6 @@
 import 'package:estate/core/helpers/spacing.dart';
-import 'package:estate/core/models/app_models.dart';
 import 'package:estate/core/style/app_text_styles.dart';
+import 'package:estate/features/notification/models/notification_model.dart';
 import 'package:estate/features/notification/widgets/notification_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

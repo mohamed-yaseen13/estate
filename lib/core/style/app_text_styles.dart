@@ -152,6 +152,27 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
   );
 
+  static TextStyle grayBarelyMediumColorinterFamily400Weight12Size = TextStyle(
+    color: AppColors.grayBarelyMedium,
+    fontFamily: AppFonts.inter,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle grayColorinterFamily500Weight14Size = TextStyle(
+    color: AppColors.gray,
+    fontFamily: AppFonts.inter,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle grayColorinterFamily500Weight10Size = TextStyle(
+    color: AppColors.gray,
+    fontFamily: AppFonts.inter,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+  );
+
   // raleway
 
   static TextStyle grayDarkColorRalewayMediumFamily500Weight14Size = TextStyle(
@@ -323,10 +344,45 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static TextStyle graySoft1ColorLatoMediumFamily500Weight8Size = TextStyle(
+    color: AppColors.graySoft1,
+    fontFamily: AppFonts.latoMedium,
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle grayDarkColorLatoMediumFamily500Weight10Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.latoMedium,
+    fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle grayDarkColorLatoBoldFamily700Weight18Size = TextStyle(
     color: AppColors.grayDark,
     fontFamily: AppFonts.latoBold,
     fontSize: 18.sp,
     fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle grayDarkColorLatoBoldFamily700Weight16Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.latoBold,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle grayDarkColorLatoBoldFamily700Weight12Size = TextStyle(
+    color: AppColors.grayDark,
+    fontFamily: AppFonts.latoBold,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle grayMediumColorLatoRegularFamily400Weight8Size = TextStyle(
+    color: AppColors.grayMedium,
+    fontFamily: AppFonts.latoRegular,
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w400,
   );
 }

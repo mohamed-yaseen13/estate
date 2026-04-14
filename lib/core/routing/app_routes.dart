@@ -32,4 +32,6 @@ class AppRoutes {
   static const String addEstateScreen3 = 'addEstateScreen3';
 
   static const String estateDetailsScreen = 'estateDetailsScreen';
+
+  static const String reserveConfirmationScreen = 'reserveConfirmationScreen';
 }
