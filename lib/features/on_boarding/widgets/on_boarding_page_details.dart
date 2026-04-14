@@ -1,5 +1,5 @@
-import 'package:estate/core/constants/app_constants.dart';
 import 'package:estate/core/helpers/spacing.dart';
+import 'package:estate/core/models/app_models.dart';
 import 'package:estate/core/style/app_colors.dart';
 import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
@@ -27,8 +27,8 @@ class OnBoardingPageDetails extends StatelessWidget {
             child: Stack(
               children: [
                 Positioned(
-                  left: index == 1 ? null : 50,
-                  right: index == 1 ? 70 : null,
+                  left: index == 1 ? null : 50.w,
+                  right: index == 1 ? 70.w : null,
                   top: 80,
                   child: BlobImage(
                     width: 150.w,
@@ -42,8 +42,8 @@ class OnBoardingPageDetails extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  left: index == 1 ? 50 : null,
-                  right: index == 1 ? null : 70,
+                  left: index == 1 ? 50.w : null,
+                  right: index == 1 ? null : 70.w,
                   top: 30,
                   child: BlobImage(
                     width: 150.w,

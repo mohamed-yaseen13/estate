@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class AppColors {
   static const Color secondaryGray6 = Color(0xFF4D5761);
 
+  static const Color secondaryGray5 = Color(0xFFF3F4F6);
+
   static const Color secondaryGray8 = Color(0xFF1F2A37);
 
   static const Color secondaryGray4 = Color(0xFF9DA4AE);
@@ -24,6 +26,10 @@ class AppColors {
   static const Color grayBarelyMedium = Color(0xFFA1A5C1);
 
   static const Color graySoft1 = Color(0xFFF5F4F8);
+
+  static const Color graySoft3 = Color(0xFF6A7282);
+
+  static const Color graySoft4 = Color(0xFFD1D5DC);
 
   static const Color grayDark = Color(0xFF252B5C);
 

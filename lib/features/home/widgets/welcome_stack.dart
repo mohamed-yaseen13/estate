@@ -15,8 +15,8 @@ class WelcomeStack extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          top: -10,
-          left: 130,
+          top: -10.h,
+          left: 130.w,
           child: SvgPicture.asset('assets/images/home_circle.svg'),
         ),
         Padding(

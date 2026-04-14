@@ -47,6 +47,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static TextStyle secondaryGray8ColorInterFamily600Weight16Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w600,
+  );
+
   static TextStyle secondaryGray8ColorInterFamily600Weight14Size = TextStyle(
     color: AppColors.secondaryGray8,
     fontFamily: AppFonts.inter,
@@ -59,6 +66,27 @@ class AppTextStyles {
     fontFamily: AppFonts.inter,
     fontSize: 14.sp,
     fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle secondaryGray8ColorInterFamily500Weight12Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle secondaryGray8ColorInterFamily500Weight16Size = TextStyle(
+    color: AppColors.secondaryGray8,
+    fontFamily: AppFonts.inter,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle graySoft3ColorInterFamily500Weight12Size = TextStyle(
+    color: AppColors.graySoft3,
+    fontFamily: AppFonts.inter,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
   );
 
   static TextStyle secondaryGray4ColorInterFamily400Weight14Size = TextStyle(
@@ -75,10 +103,24 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
   );
 
+  static TextStyle primaryDarkBlueColorInterFamily600Weight14Size = TextStyle(
+    color: AppColors.primaryDarkBlue,
+    fontFamily: AppFonts.inter,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+  );
+
   static TextStyle primaryDarkBlueColorInterFamily500Weight10Size = TextStyle(
     color: AppColors.primaryDarkBlue,
     fontFamily: AppFonts.inter,
     fontSize: 10.sp,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle primaryDarkBlueColorInterFamily500Weight16Size = TextStyle(
+    color: AppColors.primaryDarkBlue,
+    fontFamily: AppFonts.inter,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w500,
   );
 

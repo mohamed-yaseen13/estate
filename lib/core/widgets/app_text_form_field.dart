@@ -10,6 +10,8 @@ class AppTextFormField extends StatelessWidget {
   final TextInputType? textInputType;
   final Widget? suffixIcon;
   final bool? isObscureText;
+  final Color? color;
+  final int? maxLines;
 
   const AppTextFormField({
     super.key,
@@ -19,29 +21,32 @@ class AppTextFormField extends StatelessWidget {
     this.textInputType,
     this.suffixIcon,
     this.isObscureText,
+    this.color,
+    this.maxLines,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      maxLines: maxLines,
       decoration: InputDecoration(
         isDense: true,
         contentPadding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: AppColors.secondaryGray1, width: 2.w),
+          borderSide: BorderSide(color: color ?? AppColors.secondaryGray1),
           borderRadius: BorderRadius.circular(12.r),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: AppColors.secondaryGray1, width: 2.w),
+          borderSide: BorderSide(color: color ?? AppColors.secondaryGray1),
           borderRadius: BorderRadius.circular(12.r),
         ),
         errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: AppColors.errorColor, width: 2.w),
+          borderSide: BorderSide(color: AppColors.errorColor),
           borderRadius: BorderRadius.circular(12.r),
         ),
         focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: AppColors.errorColor, width: 2.w),
+          borderSide: BorderSide(color: AppColors.errorColor),
           borderRadius: BorderRadius.circular(12.r),
         ),
         hintText: placeholder,

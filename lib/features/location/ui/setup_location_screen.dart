@@ -224,24 +224,24 @@ class _SetupLocationScreenState extends State<SetupLocationScreen> {
           ),
         ),
         Positioned(
-          top: 464,
-          right: 24,
+          top: 464.h,
+          right: 24.w,
           child: GestureDetector(
             onTap: () {},
             child: SvgPicture.asset('assets/icons/my_location_icon.svg'),
           ),
         ),
         Positioned(
-          top: 529,
-          left: 24,
+          top: 529.h,
+          left: 24.w,
           child: LocationFieldContainer(
             isLocationSelected: true,
             selectedAddress: _selectedAddress,
           ),
         ),
         Positioned(
-          top: 709,
-          left: 138,
+          top: 709.h,
+          left: 138.w,
           child: Container(
             width: 100.w,
             height: 2.h,
@@ -249,8 +249,8 @@ class _SetupLocationScreenState extends State<SetupLocationScreen> {
           ),
         ),
         Positioned(
-          top: 724,
-          left: 24,
+          top: 724.h,
+          left: 24.w,
           child: SizedBox(
             width: 330.w,
             child: AppButton(desc: 'اختر موقعك', onPressed: () {}),

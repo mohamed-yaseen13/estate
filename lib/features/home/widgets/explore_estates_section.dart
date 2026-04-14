@@ -1,5 +1,6 @@
 import 'package:estate/core/constants/app_constants.dart';
 import 'package:estate/core/helpers/spacing.dart';
+import 'package:estate/core/models/app_models.dart';
 import 'package:estate/core/style/app_colors.dart';
 import 'package:estate/core/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
@@ -78,8 +79,8 @@ class ExploreEstateContainer extends StatelessWidget {
                       child: Image.asset(model.imagePath, fit: BoxFit.cover),
                     ),
                     Positioned(
-                      top: 8,
-                      left: 105,
+                      top: 8.h,
+                      left: 105.w,
                       child: Container(
                         width: 25.w,
                         height: 25.h,
@@ -97,8 +98,8 @@ class ExploreEstateContainer extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 130,
-                      left: 55,
+                      top: 130.h,
+                      left: 55.w,
                       child: Container(
                         width: 80.w,
                         height: 25.h,
@@ -127,8 +128,8 @@ class ExploreEstateContainer extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 130,
-                      left: 8,
+                      top: 130.h,
+                      left: 8.w,
                       child: Container(
                         width: 25.w,
                         height: 25.h,

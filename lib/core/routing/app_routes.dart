@@ -22,4 +22,12 @@ class AppRoutes {
   static const String reserveScreen = 'reserveScreen';
 
   static const String setupLocationScreen = 'setupLocationScreen';
+
+  static const String notificationScreen = 'notificationScreen';
+
+  static const String addEstateScreen1 = 'addEstateScreen1';
+
+  static const String addEstateScreen2 = 'addEstateScreen2';
+
+  static const String addEstateScreen3 = 'addEstateScreen3';
 }

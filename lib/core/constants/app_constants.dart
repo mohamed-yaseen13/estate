@@ -1,3 +1,5 @@
+import 'package:estate/core/models/app_models.dart';
+
 class AppConstants {
   static final List<OnboardingModel> pages = [
     OnboardingModel(
@@ -95,62 +97,61 @@ class AppConstants {
       type: 'بيع',
     ),
   ];
-}
 
-class OnboardingModel {
-  final String imageTop;
-  final String imageBottom;
-  final String title;
-  final String subtitle;
-
-  OnboardingModel({
-    required this.imageTop,
-    required this.imageBottom,
-    required this.title,
-    required this.subtitle,
-  });
-}
-
-class BannerModel {
-  final String imagePath, title, desc;
-
-  BannerModel({
-    required this.desc,
-    required this.imagePath,
-    required this.title,
-  });
-}
-
-class FeaturedEstateModel {
-  final String imagePath, title, rate, location, price, type;
-
-  FeaturedEstateModel({
-    required this.imagePath,
-    required this.location,
-    required this.price,
-    required this.rate,
-    required this.title,
-    required this.type,
-  });
-}
-
-class TopLocationModel {
-  String imagePath, name;
-
-  TopLocationModel({required this.imagePath, required this.name});
-}
-
-class ExploreEstateModel {
-  final String imagePath, price, type, title, location, rate;
-
-  ExploreEstateModel({
-    required this.imagePath,
-    required this.location,
-    required this.price,
-    required this.rate,
-    required this.title,
-    required this.type,
-  });
+  static final List<NotificationGroubModel> notificationsGroub = [
+    NotificationGroubModel(
+      date: 'اليوم',
+      notifications: [
+        NotificationModel(
+          desc: 'تهانينا، تم تفعيل إعلانك الآن. انقر هنا لعرض إعلانك.',
+          iconPath: 'assets/icons/notification_icon1.svg',
+          isRead: true,
+          isIcon: true,
+        ),
+        NotificationModel(
+          desc: 'أهلاً وسهلاً، لا تنسَ إكمال معلوماتك الشخصية',
+          iconPath: 'assets/icons/notification_icon1.svg',
+          isRead: true,
+          isIcon: true,
+        ),
+      ],
+    ),
+    NotificationGroubModel(
+      date: 'أمس',
+      notifications: [
+        NotificationModel(
+          desc: 'محمد عبدالله ارسل لك رسالة، تحقق منها الآن',
+          iconPath: 'assets/images/notification_image1.png',
+          isRead: false,
+          isIcon: false,
+        ),
+        NotificationModel(
+          desc: 'أهلاً وسهلاً، لا تنسَ إكمال معلوماتك الشخصية',
+          iconPath: 'assets/icons/notification_icon1.svg',
+          isRead: true,
+          isIcon: true,
+        ),
+        NotificationModel(
+          desc: 'أهلاً وسهلاً، لا تنسَ إكمال معلوماتك الشخصية',
+          iconPath: 'assets/icons/notification_icon1.svg',
+          isRead: true,
+          isIcon: true,
+        ),
+        NotificationModel(
+          desc: 'محمد عبدالله ارسل لك رسالة، تحقق منها الآن',
+          iconPath: 'assets/images/notification_image2.png',
+          isRead: false,
+          isIcon: false,
+        ),
+        NotificationModel(
+          desc: 'أهلاً وسهلاً، لا تنسَ إكمال معلوماتك الشخصية',
+          iconPath: 'assets/icons/notification_icon2.svg',
+          isRead: true,
+          isIcon: true,
+        ),
+      ],
+    ),
+  ];
 }
 
 enum AppNavBarEnum { profile, like, reserve, main }

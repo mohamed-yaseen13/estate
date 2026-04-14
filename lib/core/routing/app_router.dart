@@ -1,4 +1,7 @@
 import 'package:estate/core/routing/app_routes.dart';
+import 'package:estate/features/add_estate/ui/add_estate_screen1.dart';
+import 'package:estate/features/add_estate/ui/add_estate_screen2.dart';
+import 'package:estate/features/add_estate/ui/add_estate_screen3.dart';
 import 'package:estate/features/auth/login/ui/login_screen.dart';
 import 'package:estate/features/auth/new_password/ui/new_password_screen.dart';
 import 'package:estate/features/auth/new_password/ui/success_new_password_screen.dart';
@@ -8,6 +11,7 @@ import 'package:estate/features/auth/verify_code/ui/verify_code_screen.dart';
 import 'package:estate/features/home/ui/home_screen.dart';
 import 'package:estate/features/like/ui/like_screen.dart';
 import 'package:estate/features/location/ui/setup_location_screen.dart';
+import 'package:estate/features/notification/ui/notification_screen.dart';
 import 'package:estate/features/on_boarding/ui/on_boarding_screen.dart';
 import 'package:estate/features/profile/ui/profile_screen.dart';
 import 'package:estate/features/reserve/ui/reserve_screen.dart';
@@ -85,6 +89,30 @@ class AppRouter {
       case AppRoutes.setupLocationScreen:
         return MaterialPageRoute(
           builder: (_) => SetupLocationScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.notificationScreen:
+        return MaterialPageRoute(
+          builder: (_) => NotificationScreen(),
+          settings: settings,
+        );
+
+      case AppRoutes.addEstateScreen1:
+        return MaterialPageRoute(
+          builder: (_) => AddEstateScreen1(),
+          settings: settings,
+        );
+
+      case AppRoutes.addEstateScreen2:
+        return MaterialPageRoute(
+          builder: (_) => AddEstateScreen2(),
+          settings: settings,
+        );
+
+      case AppRoutes.addEstateScreen3:
+        return MaterialPageRoute(
+          builder: (_) => AddEstateScreen3(),
           settings: settings,
         );
 
